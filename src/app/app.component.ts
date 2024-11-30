@@ -10,3 +10,5 @@ import { StockComponent } from './components/stock/stock.component';
 export class AppComponent {
   title = 'youssef-angular-project';
 }
+
+

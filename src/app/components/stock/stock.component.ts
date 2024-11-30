@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { StockService } from '../../services/stock.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-stock',
   standalone: true, // IMPORTANT : Rend ce composant autonome
+  imports: [CommonModule],
   templateUrl: './stock.component.html',
   styleUrls: ['./stock.component.css'],
 })
