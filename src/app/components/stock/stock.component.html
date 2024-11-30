@@ -1,0 +1,9 @@
+<div *ngIf="isLoading" class="loading">Loading...</div>
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+<div *ngIf="stockData && !isLoading && !errorMessage">
+  <h1>Cours de Bourse</h1>
+  <p><strong>Symbol:</strong> {{ stockData?.quoteResponse?.result[0]?.symbol }}</p>
+  <p><strong>Prix:</strong> {{ stockData?.quoteResponse?.result[0]?.regularMarketPrice }} €</p>
+  <p><strong>Variation:</strong> {{ stockData?.quoteResponse?.result[0]?.regularMarketChangePercent }} %</p>
+</div>
